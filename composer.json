@@ -1,0 +1,14 @@
+{
+    "name": "flsouto/textract",
+    "description": "Extracts and combines multiline comments from php files",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Fabio Souto",
+            "email": "fabiolimasouto@gmail.com"
+        }
+    ],
+    "keywords" : ["development","command-line","documentation","parsers"],
+    "minimum-stability": "dev",
+    "require": {}
+}

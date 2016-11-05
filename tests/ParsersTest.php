@@ -38,5 +38,23 @@ CONTENT;
 
 	}
 
+	function testDocBlocksAreNotExtracted(){
+
+		$contents = <<<CONTENT
+/*
+This can be extracted
+*/
+
+/**
+This cannot be extracted
+*/
+CONTENT;
+		
+		$result = textract_parse($contents);
+
+		$this->assertEquals(['This can be extracted'], $result);
+
+	}
+
 
 }

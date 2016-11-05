@@ -13,7 +13,7 @@ function textract_parse($contents){
 		$line_trimmed = trim($line);
 
 		if(!$parsing_comment){
-			if(substr($line_trimmed,0,2)=='/*'){
+			if(substr($line_trimmed,0,2)=='/*' && substr($line_trimmed,0,3)!='/**'){
 				$parsing_comment = true;
 			}
 		} else {

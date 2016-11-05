@@ -3,7 +3,7 @@
 
 function textract_parse($contents){
 
-	$lines = preg_split("/\r\n|\r/",$contents);
+	$lines = preg_split("/\r\n|\n/",$contents);
 	$parsing_comment = false;
 	$comment_lines = [];
 	$result = [];
